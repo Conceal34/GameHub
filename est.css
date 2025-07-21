@@ -1,0 +1,27 @@
+#cursor-text {
+  position: relative;
+  cursor: caret; /* change the cursor shape to a caret */
+}
+
+#cursor-text::after {
+  content: ""; /* add a caret symbol */
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #000;
+  animation: blink 1s infinite; /* animate the caret symbol */
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

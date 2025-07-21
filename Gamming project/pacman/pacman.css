@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%;
+    background-color: #111;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(28, 20px);
+    grid-template-rows: repeat(31, 20px);
+    gap: 2px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 20px;
+    height: 20px;
+    background-color: #222;
+}
+
+.pac-man {
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+.wall {
+    background-color: #0000ff;
+}
+
+.dot {
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+#game-board .cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

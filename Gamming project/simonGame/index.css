@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: #011F3F;
+    line-height: 1.5;
+    font-family: space Grotesk;
+    font-weight: 500;
+    font-size: 18px;
+    overflow-y: hidden;
+}
+
+h1 {
+    color: aliceblue;
+    margin-top: 40px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    margin: 32px 410px;
+}
+
+.btn {
+    border: solid black 7px;
+    border-radius: 25px;
+    height: 200px;
+    width: 200px;
+}
+
+#blue {
+    background-color: blue;
+}
+#red {
+    background-color: red;
+}
+#yellow {
+    background-color: yellow;
+}
+#green {
+    background-color: green;
+}
+
+.btn-flash-animation {
+    box-shadow: 2px 2px 4px 4px whitesmoke;
+}
+
+.game-over {
+    background-color: red;
+}
